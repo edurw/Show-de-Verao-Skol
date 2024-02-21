@@ -124,7 +124,7 @@ body {
   position: relative;
   color: white;
   font-family: AmsiProCond-BlackItalic;
-  font-size : 50px;
+  font-size: 50px;
   line-height: 40px;
   display: grid;
   align-items: center;
@@ -134,7 +134,7 @@ body {
   position: relative;
   color: white;
   font-family: AmsiProCond-BlackItalic;
-  font-size : 40px;
+  font-size: 40px;
   display: grid;
   align-items: center;
 }
@@ -172,6 +172,7 @@ body {
 .arena_pop_rock_icone {
   margin: 0 auto;
   width: 240px;
+  margin-top: 10px;
   filter: drop-shadow(0px 30px 10px rgba(0, 0, 0, 0.25));
 }
 
@@ -201,7 +202,7 @@ body {
   position: relative;
   color: white;
   font-family: AmsiProCond-BlackItalic;
-  font-size : 35px;
+  font-size: 35px;
   line-height: 30px;
   display: grid;
   align-items: center;
@@ -258,7 +259,7 @@ body {
 
 .palco_texto {
   font-family: AmsiPro-BlackItalic;
-  font-size : 30px;
+  font-size: 30px;
 }
 
 .palco_content {
@@ -339,7 +340,7 @@ body {
 
 .sobre_content {
   padding-right: 80px;
-} 
+}
 
 .sobre_li_imagem {
   margin-top: 80px;
@@ -415,7 +416,7 @@ body {
 .localizacao_cabecalho_ul {
   list-style: none;
   display: flex;
-  align-items: center;  
+  align-items: center;
   z-index: 1;
   padding: 0;
 }
@@ -458,8 +459,8 @@ body {
   background-color: #af0039;
   list-style: none;
   display: flex;
-  align-items: center; 
-  justify-content: center; 
+  align-items: center;
+  justify-content: center;
   z-index: 1;
   padding: 0;
 }
@@ -529,8 +530,8 @@ body {
 .rodape_amarelo_ul {
   list-style: none;
   display: flex;
-  align-items: center; 
-  justify-content: center; 
+  align-items: center;
+  justify-content: center;
   z-index: 1;
   padding: 0;
   padding-top: 64px;
@@ -546,7 +547,7 @@ body {
 
 .rodape_amarelo_div {
   display: flex;
-  align-items: flex-end; 
+  align-items: flex-end;
   width: auto;
   margin-right: 86px;
 }
@@ -640,4 +641,112 @@ body {
   height: auto;
   position: absolute;
   margin-top: -42px;
+}
+
+@media (max-width: 1300px) {
+  .circulo_branco {
+    display: none;
+  }
+
+  .sobre_li_imagem {
+    width: 0;
+    margin: 0;
+  }
+
+  .sobre_div_imagem {
+    display: none;
+  }
+
+  .rodape_vermelho {
+    flex-wrap: wrap;
+    height: 395px;
+  }
+
+  .rs_icone {
+    margin-bottom: 10px;
+  }
+
+  .rodape_amarelo_div {
+    margin-right: 50px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .palco_texto {
+    font-size: 20px;
+  }
+
+  .palco_image {
+    width: 150px;
+  }
+
+  .palco_btn {
+    font-size: 16px;
+  }
+
+  .palco_content {
+    grid-template-rows: 30px auto 50px;
+  }
+
+  .palco {
+    width: 220px;
+  }
+
+  .feijoada_do_zeca,
+  .arena_pop_rock,
+  .bloco_skol,
+  .peixada_do_gui {
+    width: 220px;
+    padding: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .palco {
+    width: 180px;
+  }
+
+  .feijoada_do_zeca,
+  .arena_pop_rock,
+  .bloco_skol,
+  .peixada_do_gui {
+    width: 180px;
+  }
+}
+
+@media (max-width: 850px) {
+  .endereco_icone {
+    margin-right: 20px;
+  }
+
+  .rodape_amarelo_ul {
+    flex-wrap: wrap;
+  }
+
+  .rodape_amarelo {
+    height: 345px;
+  }
+
+  .redes_sociais {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 750px) {
+  .palco {
+    width: 150px;
+  }
+
+  .feijoada_do_zeca,
+  .arena_pop_rock,
+  .bloco_skol,
+  .peixada_do_gui {
+    width: 150px;
+  }
+}
+
+@media (max-width: 589px) {
+  .rodape_amarelo {
+    height: 415px;
+  }
 }
