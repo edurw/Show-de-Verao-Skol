@@ -717,9 +717,21 @@ body {
     display: none;
   }
 
-  .rodape_vermelho {
+  /* .rodape_vermelho {
     flex-wrap: wrap;
     height: 395px;
+  } */
+
+  .sul_imagem {
+    width: 140px;
+  }
+
+  .rk_imagem {
+    width: 170px;
+  }
+
+  .nsc_imagem {
+    width: 90px;
   }
 
   .rs_icone {
@@ -763,6 +775,22 @@ body {
     width: 220px;
     padding: 0;
   }
+
+  .sul {
+    padding-right: 30px;
+  }
+
+  .rk {
+    padding-right: 60px;
+  }
+
+  .tamanho_texto {
+    padding-right: 18px;
+  }
+
+  .midia_texto {
+    padding-right: 30px;
+  }
 }
 
 @media (max-width: 900px) {
@@ -775,6 +803,11 @@ body {
   .bloco_skol,
   .peixada_do_gui {
     width: 180px;
+  }
+
+  .rodape_vermelho {
+    flex-wrap: wrap;
+    height: 290px;
   }
 }
 
@@ -812,9 +845,47 @@ body {
     width: 130px;
   }
 
+  .feijoada_do_zeca_content {
+    height: 513px;
+  }
+  .arena_pop_rock_content {
+    height: 550px;
+  }
+  .bloco_skol_content {
+    height: 510px;
+  }
+  .peixada_do_gui_content {
+    height: 500px;
+  }
+
+  .feijoada_do_zeca_icone {
+    width: 160px;
+  }
+  .arena_pop_rock_icone {
+    width: 200px;
+  }
+  .bloco_skol_icone {
+    width: 180px;
+  }
+  .peixada_do_gui_icone {
+    width: 200px;
+  }
+
   .palco_btn {
     width: 130px;
     margin-left: 5px;
+  }
+
+  .rodape_amarelo_li {
+    margin-bottom: 20px;
+  }
+
+  .redes_sociais {
+    margin-top: 0;
+  }
+
+  .copy_texto {
+    margin-top: 20px;
   }
 }
 
@@ -835,6 +906,10 @@ body {
   }
 
   .agenda_data {
+    font-size: 30px;
+  }
+
+  .bloco_skol_texto {
     font-size: 30px;
   }
 
@@ -890,6 +965,31 @@ body {
     font-size: 70px;
     line-height: 30px;
   }
+
+  .agenda_texto {
+    font-size: 30px;
+  }
+
+  .agenda_data {
+    font-size: 25px;
+  }
+
+  .bloco_skol_texto {
+    font-size: 25px;
+  }
+
+  .feijoada_do_zeca_icone {
+    width: 135px;
+  }
+  .arena_pop_rock_icone {
+    width: 160px;
+  }
+  .bloco_skol_icone {
+    width: 150px;
+  }
+  .peixada_do_gui_icone {
+    width: 170px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -920,5 +1020,18 @@ body {
     width: 90px;
     margin-left: 5px;
     font-size: 14px;
+  }
+
+  .rodape_vermelho {
+    padding: 0 50%;
+    height: 450px;
+  }
+
+  .tamanho_texto,
+  .sul,
+  .rk,
+  .midia_texto,
+  .nsc {
+    padding: 0;
   }
 }
