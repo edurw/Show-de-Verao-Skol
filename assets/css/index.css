@@ -866,8 +866,8 @@ body {
   }
 
   .palco_btn {
-    width: 120px;
-    margin-left: 10px;
+    width: 110px;
+    margin-left: 5px;
   }
 
   .palco {
@@ -917,7 +917,8 @@ body {
   }
 
   .palco_btn {
-    width: 100px;
+    width: 90px;
     margin-left: 5px;
+    font-size: 14px;
   }
 }
