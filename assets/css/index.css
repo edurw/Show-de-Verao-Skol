@@ -4,6 +4,11 @@
   width: 100%;
 }
 
+body {
+  overflow-x: hidden;
+  background-color: #f3f4f9;
+}
+
 @font-face {
   font-family: AmsiProCond-BlackItalic;
   src: url('../fonts/AmsiProCond-BlackItalic.otf');
@@ -88,6 +93,7 @@
 .ondulado {
   height: 825px;
   display: flex;
+  background: url('../img/fundo_ondulado.webp');
   background-color: #f7e134;
 }
 
@@ -400,6 +406,7 @@
 
 #localizacao_cabecalho {
   display: flex;
+  background: url('../img/fundo_ondulado_localizacao.webp');
   background-color: #1a6eab;
   height: 215px;
   border-bottom: 5px solid #f3f4f9;
