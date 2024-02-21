@@ -66,14 +66,18 @@ body {
   display: flex;
   padding: 50px 0;
   z-index: 3;
+  animation-duration: 2s;
+  animation-name: logo_skol_animation;
 }
 
-.guarda_sol {
-  width: 1080px;
-  top: -467px;
-  right: -218px;
-  position: static;
-  z-index: 1;
+@keyframes logo_skol_animation {
+  from {
+    transform: translateY(-800px);
+  }
+
+  to {
+    transform: translateY(0);
+  }
 }
 
 .show_de_verao {
@@ -81,13 +85,38 @@ body {
   margin: auto;
   display: flex;
   z-index: 3;
+  animation-duration: 2s;
+  animation-name: show_de_verao_animation;
 }
+
+@keyframes show_de_verao_animation {
+  from {
+    transform: translateY(-1000px);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
 
 .areia {
   height: 500px;
   position: relative;
   background: url('../img/fundo_areia.webp') center no-repeat;
   border-bottom: 5px solid white;
+  animation-duration: 2s;
+  animation-name: areia_animation;
+}
+
+@keyframes areia_animation {
+  from {
+    height: 0;
+  }
+
+  to {
+    height: 500px;
+  }
 }
 
 .ondulado {
@@ -95,7 +124,21 @@ body {
   display: flex;
   background: url('../img/fundo_ondulado.webp');
   background-color: #f7e134;
+  z-index: 0;
+  animation-duration: 2s;
+  animation-name: ondulado_animation;
 }
+
+@keyframes ondulado_animation {
+  from {
+    height: 200vh;  
+  }
+
+  to {
+    height: 825px;  
+  }
+}
+
 
 /* agenda */
 
@@ -290,12 +333,14 @@ body {
   transform: skew(-10deg);
   border-radius: 10px;
   transition: 0.2s ease-in-out;
+  z-index: 9;
 }
 
 .palco_btn:hover {
   scale: 125%;
   transition: 0.2s ease-in-out;
   cursor: pointer;
+  z-index: 10;
 }
 
 .btn_habilitado {
@@ -762,6 +807,44 @@ body {
   .peixada_do_gui {
     width: 150px;
   }
+
+  .palco_image {
+    width: 130px;
+  }
+
+  .palco_btn {
+    width: 130px;
+    margin-left: 5px;
+  }
+}
+
+@media (max-width: 620px) {
+  .palco {
+    width: 140px;
+  }
+
+  .feijoada_do_zeca,
+  .arena_pop_rock,
+  .bloco_skol,
+  .peixada_do_gui {
+    width: 140px;
+  }
+
+  .agenda_texto {
+    font-size: 40px;
+  }
+
+  .agenda_data {
+    font-size: 30px;
+  }
+
+  .palco_content {
+    grid-template-rows: 30px auto 50px;
+  }
+
+  .palco_image {
+    width: 130px;
+  }
 }
 
 @media (max-width: 589px) {
@@ -771,9 +854,70 @@ body {
 
   .logo_skol {
     width: 150px;
+    padding: 100px 0;
   }
 
   .show_de_verao {
     width: 450px;
+  }
+
+  .palco_image {
+    width: 120px;
+  }
+
+  .palco_btn {
+    width: 120px;
+    margin-left: 10px;
+  }
+
+  .palco {
+    width: 120px;
+  }
+
+  .feijoada_do_zeca,
+  .arena_pop_rock,
+  .bloco_skol,
+  .peixada_do_gui {
+    width: 130px;
+  }
+
+  #pin_localizacao_cabecalho {
+    width: 32px;
+    height: 50px;
+  }
+
+  .texto_localizacao_cabecalho {
+    font-size: 70px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .show_de_verao {
+    width: 350px;
+  }
+
+  .logo_skol {
+    padding: 120px 0;
+  }
+
+  .palco {
+    width: 100px;
+  }
+
+  .feijoada_do_zeca,
+  .arena_pop_rock,
+  .bloco_skol,
+  .peixada_do_gui {
+    width: 100px;
+  }
+
+  .palco_image {
+    width: 100px;
+  }
+
+  .palco_btn {
+    width: 100px;
+    margin-left: 5px;
   }
 }
