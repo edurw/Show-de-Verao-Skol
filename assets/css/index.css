@@ -648,6 +648,14 @@ body {
     display: none;
   }
 
+  .espaco {
+    width: 0;
+  }
+
+  .sobre_content {
+    padding: 0 10%;
+  }
+
   .sobre_li_imagem {
     width: 0;
     margin: 0;
@@ -668,6 +676,10 @@ body {
 
   .rodape_amarelo_div {
     margin-right: 50px;
+  }
+
+  .espaco_localizacao_cabecalho {
+    width: 0;
   }
 }
 
@@ -748,5 +760,13 @@ body {
 @media (max-width: 589px) {
   .rodape_amarelo {
     height: 415px;
+  }
+
+  .logo_skol {
+    width: 150px;
+  }
+
+  .show_de_verao {
+    width: 450px;
   }
 }
