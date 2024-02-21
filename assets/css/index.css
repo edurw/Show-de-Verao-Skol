@@ -142,7 +142,7 @@ body {
 /* feijoada_do_zeca */
 
 .feijoada_do_zeca {
-  background: url('../img/feijoadaDoZecaFundo.png') bottom center no-repeat;
+  background: url('../img/fundo_vermelho.webp') bottom center no-repeat;
   width: 290px;
   padding-right: 15px;
 }
@@ -160,7 +160,7 @@ body {
 /* arena_pop_rock */
 
 .arena_pop_rock {
-  background: url('../img/festivalArenaPopRockFundo.png') bottom center no-repeat;
+  background: url('../img/fundo_azul.webp') bottom center no-repeat;
   width: 290px;
   padding-left: 20px;
 }
@@ -179,7 +179,7 @@ body {
 /* bloco_skol */
 
 .bloco_skol {
-  background: url('../img/blocoSkolFundo.png') bottom center no-repeat;
+  background: url('../img/fundo_amarelo.webp') bottom center no-repeat;
   width: 290px;
   padding-right: 10px;
 }
@@ -211,7 +211,7 @@ body {
 /* peixada do gui */
 
 .peixada_do_gui {
-  background: url('../img/peixadaDoGuiFundo.png') bottom center no-repeat;
+  background: url('../img/fundo_rosa.webp') bottom center no-repeat;
   width: 290px;
   padding-right: 5px;
 }
@@ -227,7 +227,7 @@ body {
 }
 
 #info {
-  background: url('../img/fundoAmarelo.png') top no-repeat;
+  background: url('../img/fundo_amarelo_local.webp') top no-repeat;
   height: 530px;
   width: 100%;
   display: flex;
@@ -379,6 +379,13 @@ body {
   width: 250px;
   color: #404040;
   border: 2px solid #b72319;
+  transition: 0.2s ease-in-out;
+}
+
+.sobre_btn:hover {
+  scale: 125%;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 .sobre_btn_texto {
